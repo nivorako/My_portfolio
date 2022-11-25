@@ -1,0 +1,125 @@
+$font-1: 'Nova Round', cursive;
+$font-2: 'Dosis', sans-serif;
+$font-3: 'Josefin sans', serif;
+
+$fs-1: 16px;
+$fs-2: 24px;
+$fs-3: 32px;
+$fs-4: 56px;
+
+$color-1: #003800;
+$color-2: #006311;
+$color-3: #00913B;
+$color-4: #2DC066;
+$color-5: #69F293;
+$white: #ddd;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px $color-3;
+$min-height: 95vh;
+
+@mixin verticalCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  margin: 1rem auto;  
+  font-family: $font-1;
+  color: $black;
+}
+
+button{
+    cursor: pointer;
+    min-width: 50px;
+    height: 30px;
+    border: none;
+    padding: 2px;
+    box-shadow: $shadow;
+    background-color: $color-5;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    font-size: $fs-2;
+    color: $color-1;
+    z-index: 0;
+    i{
+        color: $color-1;
+        transition: all 1s;
+    }
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-1;
+    border-radius: 50% 50% 0 0;
+    transition: all 1s;
+    z-index: -1;
+}
+
+button:hover::before{
+    top: 0;
+    border-radius: 0;
+}
+button:hover{
+    color: $white;
+}
+button:hover i{
+    color: $white;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: $color-4;
+    cursor: pointer
+}
+
+.home, .knowledges ,.contact, .portFolio, .notfound{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-1;
+    @media screen and (max-width: 850px){
+        display: block !important;
+    }
+}
+
+.home__header, .knowledges__header, .contact__header, .portFolio__header, .notfound__header  {
+   height: 5vh;
+}
+
+.home__content, .knowledges__content, .contact__content, .portFolio__content, .notfound__content{  
+    height: 80vh;
+    background-color: $color-5;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    @media screen and (max-width: 850px){
+        margin-left: 0 !important;
+    }
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

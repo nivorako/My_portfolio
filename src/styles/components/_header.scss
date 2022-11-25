@@ -1,0 +1,26 @@
+.header{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-1;
+    box-shadow: 0 5px 10px black;
+    
+    &__title{
+        width: 40%;
+        display: flex;
+        align-items: baseline;
+        justify-content: start;
+        color: $white;
+        padding-left: 2rem;
+        h1{
+            font-size: $fs-1;
+            margin-right: 2rem;
+        }
+        span{
+            font-size: $fs-2;
+            margin-left: 2rem;
+        }
+    }
+}
