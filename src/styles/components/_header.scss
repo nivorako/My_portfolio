@@ -2,26 +2,13 @@
     width: 100vw;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: $color-1;
     box-shadow: 0 5px 10px black;
     
-    &__title{
-        width: 500px;
-        display: flex;
-        align-items: baseline;
-        justify-content: start;
-        color: $white;
-        padding-left: 2rem;
-        h1{
-            font-size: $fs-1;
-            margin-right: 2rem;
-        }
-        span{
-            font-size: $fs-2;
-            margin-left: 2rem;
-        }
+    &__nav{
+        width: 600px;
     }
     &__bars{
         display: none;
@@ -30,15 +17,13 @@
 
 @media screen and (max-width: 950px){
     .header{
+        justify-content: end;
         &__nav{
             display: none; 
         }
-        &__nav responsive{
-            display: block;
-        }
         &__bars{
             display: block;
-            margin-right: 20px;
+            margin-right: 2em;
         }
     }          
 }
