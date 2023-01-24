@@ -19,27 +19,6 @@ const Home = () => {
                         <p className=''>Developpeur Front End en reconversion, passionné par la puissance du web</p>
                     </div>
                    
-                    <div className='home__social'>  
-                        <ul>
-                            <li>
-                                <button>
-                                    <a href="https://www.linkedin.com/feed/">
-                                        <i className="fab fa-linkedin home__btn"></i>
-                                    </a>
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                    <a href="https://www.google.com/">
-                                        <i className="fab fa-github home__btn"></i>
-                                    </a>
-                                </button>
-                            </li>
-                            <li>
-                                <button className='home__btn'>Mon cv</button>
-                            </li>
-                        </ul> 
-                    </div>
                 </section>
                 <section className='home__id'>
                     
