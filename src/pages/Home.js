@@ -1,6 +1,6 @@
 import React from 'react';
 import { Footer } from '../components/Footer';
-
+import NavBar from '../components/Navbar';
 import { Header } from '../components/Header';
 
 console.log()
@@ -41,9 +41,10 @@ const Home = () => {
                         </ul> 
                     </div>
                 </section>
-                <section className='home__img'>
-                    <img alt='je suis devant écran' src="/media/za.png"/>
+                <section className='home__id'>
+                    
                 </section>
+                <div className='home__navbar hidden'><NavBar/></div>
             </main>
             <footer className='home__footer'>
                     <Footer />
@@ -53,3 +54,13 @@ const Home = () => {
 }
 
 export default Home;
+
+{/* <div className='home__idImg'>
+        <div className='home__idLogo'></div>
+        <img alt='je suis devant écran' src="/media/za.png"/>
+    </div>
+    <div className="home__idTitle">
+        <h1 className="home__idName">Niv Rako</h1>
+        <p>||</p>
+        <span className="home__idComment">Developpeur Front End</span>
+    </div> */}

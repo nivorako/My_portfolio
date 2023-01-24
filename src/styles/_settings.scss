@@ -32,7 +32,7 @@ $min-height: 95vh;
 }
 
 body{
-  margin: 1rem auto;  
+   
   font-family: $font-1;
   color: $black;
 }
@@ -104,7 +104,7 @@ a{
 }
 
 .home__header, .knowledges__header, .contact__header, .portFolio__header, .notfound__header  {
-   height: 5vh;
+   height: 10vh;
 }
 
 .home__content, .knowledges__content, .contact__content, .portFolio__content, .notfound__content{  
@@ -114,6 +114,14 @@ a{
     @media screen and (max-width: 850px){
         margin-left: 0 !important;
     }
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
 }
 
 footer{

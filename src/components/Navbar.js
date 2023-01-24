@@ -43,18 +43,7 @@ function NavBar() {
                         <span>Portfolio</span>
                     </NavLink>
                 </li>
-                {/* <li className="sidebar__li">
-                    <NavLink
-                        to="/Contact"
-                        className="sidebar__navLink"
-                        style={({ isActive }) =>
-                            isActive ? { color: "#7d9e83" } : { color : "white"}
-                        }
-                    >
-                        <i className="fa fa-address-book"></i>
-                        <span>Contact</span>
-                    </NavLink>
-                </li> */}
+                
             </ul>
         </div>
     )
